@@ -1,0 +1,207 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.footer {
+    padding: 3rem 2rem;
+    text-align: center;
+    background: linear-gradient(135deg, #6B73FF, #000DFF);
+    color: white;
+    margin-top: 3.2rem;
+    width: 100%;
+    flex-shrink: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+.footer h3 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    font-weight: 700;
+}
+
+.footer p {
+    margin: 0.5rem 0;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.social-icons {
+    margin-top: 1rem;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.social-icons a {
+    margin: 0 0.5rem;
+    color: white;
+    font-size: 1.5rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #FFD700;
+    transform: scale(1.1);
+}
+
+.newsletter {
+    margin-top: 2rem;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.newsletter form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.newsletter input {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1rem;
+}
+
+.newsletter button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #FFD700;
+    color: #000DFF;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.newsletter button:hover {
+    background-color: #FFC700;
+}
+
+.contact-info {
+    margin-top: 2rem;
+    animation: fadeIn 2.5s ease-in-out;
+}
+
+.contact-info a {
+    color: #FFD700;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .footer {
+        padding: 1rem;
+    }
+
+    .social-icons a {
+        font-size: 1.2rem;
+    }
+
+    .newsletter form {
+        flex-direction: column;
+    }
+
+    .newsletter input {
+        margin-bottom: 1rem;
+        width: 100%;
+    }
+
+    .newsletter button {
+        width: 100%;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 
+option h yeh agr achch nhi lga toh yeh chalo kar lena 
+*/
+
+/* @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+
+.footer {
+    padding: 2rem;
+    text-align: center;
+    background: linear-gradient(135deg, #6B73FF, #000DFF);
+    color: white;
+    margin-top: 3.2rem; 
+    width: 100%;
+    flex-shrink: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer p {
+    margin: 0.5rem 0;
+}
+
+.social-icons {
+    margin-top: 1rem;
+}
+
+.social-icons a {
+    margin: 0 0.5rem;
+    color: white;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #FFD700;
+}
+
+@media (max-width: 600px) {
+    .footer {
+        padding: 1rem;
+    }
+
+    .social-icons a {
+        font-size: 1.2rem;
+    }
+} */

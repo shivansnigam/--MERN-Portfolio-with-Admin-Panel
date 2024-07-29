@@ -1,0 +1,113 @@
+/** -----------------------
+** services section css
+** -------------------------  */
+
+.section-services {
+  & .container:first-child {
+    padding: 0;
+  }
+
+  & .grid-three-cols {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3.2rem;
+  }
+
+  & .card {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    border: 0.2rem solid var(--helper-color);
+
+    & .card-img {
+      text-align: center;
+      & img {
+        width: 70%;
+        height: auto;
+        filter: drop-shadow(0 0 2rem 2rem #fff);
+        -webkit-filter: drop-shadow(0 0 2rem 2rem #fff);
+      }
+    }
+
+    & .card-details {
+      padding: 2.4rem;
+
+      & .service-meta {
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.4rem;
+        margin-bottom: 1.2rem;
+  
+      }
+
+      & h2 {
+        font-size: 3.2rem;
+        margin: 1.2rem 0 2.4rem 0;
+      }
+    }
+  }
+}
+.section-services {
+  & .container {
+    padding-top: 3rem; 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+  }
+
+  & .services-heading {
+    text-align: left; 
+    font-size: 3rem; 
+    margin-bottom: 2rem; 
+    margin-left: 0.5rem; 
+  }
+
+  & .grid-three-cols {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3.2rem;
+  }
+
+  
+}
+
+.section-services {
+  & .container {
+    padding-top: 3rem; 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+  }
+
+  & .services-heading {
+    text-align: left; 
+    font-size: 4rem; 
+    margin-bottom: 2rem; 
+    margin-left: 0.5rem; 
+    border-bottom: 4.3px solid #535BF2; 
+    padding-bottom: 0.5rem; 
+  }
+
+  & .grid-three-cols {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3.2rem;
+  }
+
+  
+}
+
+.card {
+  transition: transform 0.3s, box-shadow 0.3s; 
+}
+
+.card:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); 
+}
+
+.card:hover .service-meta p,
+.card:hover h2 {
+  color: #535BF2; 
+}
